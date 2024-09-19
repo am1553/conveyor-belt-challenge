@@ -5,7 +5,7 @@ const SIMULATION_STEPS = 100;
 const PAIRED_WORKERS = 3;
 const BELT_SIZE = 5;
 // can control how fast the promise is resolved for returning a component at random interval
-export const INTERVAL_TIME_DIVISOR = 100;
+export const INTERVAL_TIME_MULTIPLIER = 100;
 
 async function runSimulation() {
     /**
