@@ -1,4 +1,4 @@
-import { INTERVAL_TIME_DIVISOR } from './index.js';
+import { INTERVAL_TIME_MULTIPLIER } from './index.js';
 
 /**
  *
@@ -6,7 +6,7 @@ import { INTERVAL_TIME_DIVISOR } from './index.js';
  */
 export const randomComponent = () => {
     const rand = Math.random();
-    const interval = Math.random() * INTERVAL_TIME_DIVISOR;
+    const interval = Math.random() * INTERVAL_TIME_MULTIPLIER;
 
     return new Promise((resolve) => {
         const component = rand < 1 / 3 ? 'A' : rand < 2 / 3 ? 'B' : null;
