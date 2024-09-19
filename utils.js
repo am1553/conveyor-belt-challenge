@@ -9,9 +9,8 @@ export const randomComponent = () => {
     const interval = Math.random() * INTERVAL_TIME_DIVISOR;
 
     return new Promise((resolve) => {
-        // const component = rand < 1 / 3 ? 'A' : rand < 2 / 3 ? 'B' : null;
+        const component = rand < 1 / 3 ? 'A' : rand < 2 / 3 ? 'B' : null;
 
-        const component = rand < 1 / 3 ? 'A' : 'B';
         setTimeout(() => {
             resolve(component);
         }, interval);
