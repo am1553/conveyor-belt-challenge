@@ -3,7 +3,7 @@ import random
 
 BELT_SIZE = 5
 PAIRED_WORKERS = 3
-SIMULATION_STEPS = 20
+SIMULATION_STEPS = 100
 
 class Worker:
     def __init__(self):
